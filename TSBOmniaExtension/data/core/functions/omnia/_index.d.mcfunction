@@ -92,3 +92,30 @@
     #declare tag Believe.Rumor
     #declare tag Believe.Urban
     #declare tag Believe.Wi-ki
+
+#> in temple
+# @within function player_manager:god/omnia/in_temple
+    #declare function player_manager:god/common/send_believer_in_temple_menu
+    #declare function player_manager:god/common/send_another_believer_in_temple_buttons
+
+#> area
+# @within function world_manager:area/01.god_boundaries/on_tick
+    #declare function world_manager:area/01-00.gate_island
+    #declare function world_manager:area/01-01.flora_temple
+    #declare function world_manager:area/01-02.nyaptov_temple
+    #declare function world_manager:area/01-03.rumor_temple
+    #declare function world_manager:area/01-04.urban_temple
+    #declare function world_manager:area/01-05.wi-ki_temple
+    #declare function world_manager:area/01-50.training_area/
+    #
+    #declare objective InSubArea
+    #declare objective Temporary
+    #
+    #declare predicate world_manager:area/01-01.flora_temple
+    #declare predicate world_manager:area/01-02.nyaptov_temple
+    #declare predicate world_manager:area/01-03.rumor_temple
+    #declare predicate world_manager:area/01-04.urban_temple
+    #declare predicate world_manager:area/01-05.wi-ki_temple
+    #declare predicate world_manager:area/01-50.training_area
+    #
+    #declare score_holder $NextInSubArea
