@@ -26,7 +26,7 @@ jobs:
 
     - name: Merge Datapack
       run: |
-        mv -f dummy/TSBOmniaExtension TheSkyBlessing
+        mv -f dummy/TSBOmniaExtension/ TheSkyBlessing
 
     - name: Test
       uses: ChenCMD/datapack-linter@v2
