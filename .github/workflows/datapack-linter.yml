@@ -1,0 +1,31 @@
+name: lint-datapack
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Dependencies
+      uses: actions/checkout@v5
+      with:
+        repository: ProjectTSB/TheSkyBlessing
+        fetch-depth: 0
+        ref: refs/tags/v1.0.4
+
+    - name: Checkout Repository
+      uses: actions/checkout@v5
+      with:
+        fetch-depth: 0
+
+    - name: Test
+      uses: ChenCMD/datapack-linter@v2
+      with:
+        muteSuccessResult: true
+        ignoreLintPathPattern: |
+          core:define_gamerule
