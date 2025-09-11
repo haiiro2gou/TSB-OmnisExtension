@@ -20,6 +20,22 @@
     #declare tag CheckFailed
     #declare tag DevPrivilege
 
+#> first join
+# @within function core:handler/first_join
+    #declare function core:handler/join
+    #declare function lib:get_name/
+    #declare function metric:user_id
+    #declare function oh_my_dat:please
+    #declare function player_manager:god/none/set_tag
+    #
+    #declare objective RespawnEvent
+    #declare objective UserID
+    #
+    #declare storage lib:
+    #declare storage oh_my_dat:
+    #
+    #declare tag Friend
+
 #> load
 # @within function
 #   core:omnia/load
