@@ -4,10 +4,6 @@
 #
 # @within tag/function minecraft:load
 
-#> private
-# @private
-    #declare storage global
-
 # リリーストリガー
     data modify storage global Omnia.IsProduction set value false
 

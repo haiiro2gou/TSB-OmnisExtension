@@ -4,20 +4,6 @@
 #
 # @within function asset_manager:artifact/check/
 
-#> private
-# @within *
-#   asset_manager:artifact/check/**
-#   player_manager:is_believe/**
-    #declare tag CheckFailed
-    #declare tag Believe.Omnia
-    #declare tag DevPrivilege
-    #declare storage asset:artifact
-    #declare predicate player_manager:is_believe/flora
-    #declare predicate player_manager:is_believe/nyaptov
-    #declare predicate player_manager:is_believe/rumor
-    #declare predicate player_manager:is_believe/urban
-    #declare predicate player_manager:is_believe/wi-ki
-
 # タグの事前付与
     tag @s add CheckFailed
 # チェックに成功してたらタグを外す
