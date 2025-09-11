@@ -21,8 +21,12 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v5
       with:
-        path: TSB-OmniaExt
+        path: dummy
         fetch-depth: 0
+
+    - name: Merge Datapack
+      run: |
+        mv -f dummy/TSBOmniaExtension TheSkyBlessing
 
     - name: Test
       uses: ChenCMD/datapack-linter@v2
