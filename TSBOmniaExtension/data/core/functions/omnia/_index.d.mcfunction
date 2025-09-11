@@ -5,6 +5,8 @@
 # @public
     #declare objective Global
     #
+    #declare function oh_my_dat:please
+    #
     #declare predicate player_manager:is_believe/flora
     #declare predicate player_manager:is_believe/nyaptov
     #declare predicate player_manager:is_believe/rumor
@@ -12,6 +14,7 @@
     #declare predicate player_manager:is_believe/wi-ki
     #
     #declare storage asset:artifact
+    #declare storage oh_my_dat:
     #
     #declare tag Believe.Omnia
 
@@ -25,14 +28,12 @@
     #declare function core:handler/join
     #declare function lib:get_name/
     #declare function metric:user_id
-    #declare function oh_my_dat:please
     #declare function player_manager:god/none/set_tag
     #
     #declare objective RespawnEvent
     #declare objective UserID
     #
     #declare storage lib:
-    #declare storage oh_my_dat:
     #
     #declare tag Friend
 
@@ -41,3 +42,53 @@
 #   core:omnia/load
 #   core:omnia/reload
     #declare storage global
+
+#> change believe
+# @within
+#   function
+#       debug:change_believe/omnia
+#       player_manager:god/change_believe/change_process/believe1
+#       player_manager:god/change_believe/change_process/believe2
+#       player_manager:god/change_believe/change_process/unbelieve1
+#       player_manager:god/change_believe/change_process/unbelieve2
+    #declare function debug:change_believe/none
+    #declare function lib:message/god/flora/believe1
+    #declare function lib:message/god/flora/believe2
+    #declare function lib:message/god/flora/unbelieve1
+    #declare function lib:message/god/flora/unbelieve2
+    #declare function lib:message/god/nyaptov/believe1
+    #declare function lib:message/god/nyaptov/believe2
+    #declare function lib:message/god/nyaptov/unbelieve1
+    #declare function lib:message/god/nyaptov/unbelieve2
+    #declare function lib:message/god/rumor/believe1
+    #declare function lib:message/god/rumor/believe2
+    #declare function lib:message/god/rumor/unbelieve1
+    #declare function lib:message/god/rumor/unbelieve2
+    #declare function lib:message/god/urban/believe1
+    #declare function lib:message/god/urban/believe2
+    #declare function lib:message/god/urban/unbelieve1
+    #declare function lib:message/god/urban/unbelieve2
+    #declare function lib:message/god/wi-ki/believe1
+    #declare function lib:message/god/wi-ki/believe2
+    #declare function lib:message/god/wi-ki/unbelieve1
+    #declare function lib:message/god/wi-ki/unbelieve2
+    #declare function player_manager:god/flora/believe
+    #declare function player_manager:god/flora/unbelieve
+    #declare function player_manager:god/nyaptov/believe
+    #declare function player_manager:god/nyaptov/unbelieve
+    #declare function player_manager:god/rumor/believe
+    #declare function player_manager:god/rumor/unbelieve
+    #declare function player_manager:god/urban/believe
+    #declare function player_manager:god/urban/unbelieve
+    #declare function player_manager:god/wi-ki/believe
+    #declare function player_manager:god/wi-ki/unbelieve
+    #
+    #declare objective InSubArea
+    #
+    #declare tag Believe.Changed
+    #declare tag Believe.None
+    #declare tag Believe.Flora
+    #declare tag Believe.Nyaptov
+    #declare tag Believe.Rumor
+    #declare tag Believe.Urban
+    #declare tag Believe.Wi-ki
