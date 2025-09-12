@@ -26,6 +26,8 @@
 # 名前を取得しておく
     execute unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Name run function lib:get_name/
     execute unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Name run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Name set from storage lib: Return.Name
+# 拡張の導入通知
+    function lib:message/common/omnia_intro
 
 function metric:user_id
 
