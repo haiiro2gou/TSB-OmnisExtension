@@ -13,3 +13,4 @@
     execute if entity @s[tag=Believe.Rumor] run function lib:message/god/rumor/unbelieve1
     execute if entity @s[tag=Believe.Urban] run function lib:message/god/urban/unbelieve1
     execute if entity @s[tag=Believe.Wi-ki] run function lib:message/god/wi-ki/unbelieve1
+    execute if entity @s[tag=Believe.Omnia] run function lib:message/god/omnia/unbelieve1

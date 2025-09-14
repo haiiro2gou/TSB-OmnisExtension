@@ -9,3 +9,4 @@ execute if score @s InSubArea matches 2 run function lib:message/god/nyaptov/bel
 execute if score @s InSubArea matches 3 run function lib:message/god/rumor/believe1
 execute if score @s InSubArea matches 4 run function lib:message/god/urban/believe1
 execute if score @s InSubArea matches 5 run function lib:message/god/wi-ki/believe1
+execute if score @s InSubArea matches 6 run function lib:message/god/omnia/believe1

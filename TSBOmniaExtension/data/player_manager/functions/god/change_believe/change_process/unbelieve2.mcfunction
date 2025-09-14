@@ -19,6 +19,7 @@
     execute if entity @s[tag=Believe.Urban] run function player_manager:god/urban/unbelieve
     execute if entity @s[tag=Believe.Wi-ki] run function lib:message/god/wi-ki/unbelieve2
     execute if entity @s[tag=Believe.Wi-ki] run function player_manager:god/wi-ki/unbelieve
+    execute if entity @s[tag=Believe.Omnia] run function lib:message/god/omnia/unbelieve2
     execute if entity @s[tag=Believe.Omnia] run function player_manager:god/omnia/unbelieve
 # 全装備を再チェック
     tag @s add Believe.Changed
