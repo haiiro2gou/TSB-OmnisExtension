@@ -14,13 +14,13 @@
 # @within function
 #   core:omnis/load_once
 #   player_manager:set_team_and_per_health
-    data modify storage global Icon.God.Omnis set value '{"text":"■","color":"gray"}'
+    data modify storage global Icon.God.Omnis set value '{"text":"0","font":"omnis","color":"white"}'
     team add Omnis.LowHP
     team add Omnis.MedHP
     team add Omnis.HighHP
     team modify Omnis.LowHP color red
     team modify Omnis.MedHP color yellow
     team modify Omnis.HighHP color green
-    team modify Omnis.LowHP prefix [{"text":""},{"text":"\u0002","font":"space"},{"text":"■","color":"gray"},{"text":"\u0004","font":"space"}]
-    team modify Omnis.MedHP prefix [{"text":""},{"text":"\u0002","font":"space"},{"text":"■","color":"gray"},{"text":"\u0004","font":"space"}]
-    team modify Omnis.HighHP prefix [{"text":""},{"text":"\u0002","font":"space"},{"text":"■","color":"gray"},{"text":"\u0004","font":"space"}]
+    team modify Omnis.LowHP prefix [{"text":"0","font":"omnis","color":"white"},{"text":"\u0002","font":"space"}]
+    team modify Omnis.MedHP prefix [{"text":"0","font":"omnis","color":"white"},{"text":"\u0002","font":"space"}]
+    team modify Omnis.HighHP prefix [{"text":"0","font":"omnis","color":"white"},{"text":"\u0002","font":"space"}]
