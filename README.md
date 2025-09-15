@@ -11,7 +11,8 @@ for TSB v1.0.4
 
 ## ライセンスについて
 
-このリポジトリでは、 [CC0-1.0 License](LICENSE) が適用されます。
+このリポジトリのコードには、 [CC0-1.0 License](LICENSE) が適用されます。  
+付属するリソースパックについては、 [Apache-2.0 License](LICENSE_RESOURCE) が適用されます。
 
 ## コントリビューションについて
 
