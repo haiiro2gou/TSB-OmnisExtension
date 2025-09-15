@@ -1,4 +1,4 @@
-#> world_manager:area/01-06.omnia_temple
+#> world_manager:area/01-06.omnis_temple
 #
 #
 #

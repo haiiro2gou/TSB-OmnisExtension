@@ -1,4 +1,4 @@
-#> lib:message/common/omnia_intro
+#> lib:message/common/omnis_intro
 #
 #
 #

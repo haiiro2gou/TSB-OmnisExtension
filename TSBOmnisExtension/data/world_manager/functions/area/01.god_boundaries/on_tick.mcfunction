@@ -12,6 +12,6 @@
     execute if predicate world_manager:area/01-03.rumor_temple run function world_manager:area/01-03.rumor_temple
     execute if predicate world_manager:area/01-04.urban_temple run function world_manager:area/01-04.urban_temple
     execute if predicate world_manager:area/01-05.wi-ki_temple run function world_manager:area/01-05.wi-ki_temple
-    execute if predicate world_manager:area/01-06.omnia_temple run function world_manager:area/01-06.omnia_temple
+    execute if predicate world_manager:area/01-06.omnis_temple run function world_manager:area/01-06.omnis_temple
 # トレーニングエリア
     execute if predicate world_manager:area/01-50.training_area run function world_manager:area/01-50.training_area/
