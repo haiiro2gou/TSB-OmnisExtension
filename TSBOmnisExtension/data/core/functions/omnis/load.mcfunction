@@ -14,7 +14,8 @@
     execute if data storage global Omnis{IsProduction:false} run function core:omnis/load_once
     execute if data storage global Omnis{IsProduction: true} unless data storage global Omnis.Version run function core:omnis/load_once
 
-# マイグレーション (WIP)
+# マイグレーション
+    function core:omnis/migration/
 
 # バージョンデータ登録
     function debug:metric/extension.m with storage global Omnis

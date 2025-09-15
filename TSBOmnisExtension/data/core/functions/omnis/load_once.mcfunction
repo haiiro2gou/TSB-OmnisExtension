@@ -5,7 +5,7 @@
 # @within function core:omnis/load
 
 # バージョンタグ
-    data modify storage global Omnis merge value {Id:"haiiro2gou.omnis-ext",Version:"v1.0.0",ReqBaseVersion:"v1.0.4"}
+    data modify storage global Omnis merge value {Id:"haiiro2gou.omnis-ext",Version:"v1.1.0",ReqBaseVersion:"v1.0.4"}
 
 # ストラクチャー管理用
     data modify storage world_manager:area Omnis set value {Gate:false,Temple:false}
